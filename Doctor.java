@@ -1,5 +1,6 @@
 package com.practicefusion.assignment;
 
+// Doctor class representing doctor object
 public class Doctor {
 	private String firstName;
 	private String lastName;
@@ -10,8 +11,8 @@ public class Doctor {
 	private int reviewScore;
 
 	// constructor
-	public Doctor(String firstName, String lastName, int age, String sex,
-			String speciality, String area, int reviewScore) {
+	// assuming these below fields for the assignment
+	public Doctor(String firstName, String lastName, int age, String sex, String speciality, String area, int reviewScore) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.sex = sex;
