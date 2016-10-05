@@ -42,6 +42,9 @@ public class DoctorComparator implements Comparator<Doctor> {
 	 */
 	public int getSimilarityScore(Doctor doctorInfo) {
 		int sexCmp = Math.abs(this.sex.compareTo(doctorInfo.getSex()));
+		// for simplicity I'm comparing strings for specialty
+		// doing a dumb string comparison would not be accuarte nor appropriate
+		// but in reality check if the specialty belongs to other related specialties
 		int specialityComp = Math.abs(this.speciality.compareTo(doctorInfo.getSpecality()));
 		int ageComp = Math.abs(Integer.compare(this.age, doctorInfo.getAge()));
 		int reviewScoreComp = Math.abs(Integer.compare(this.reviewScore, doctorInfo.getReviewScore())); 
